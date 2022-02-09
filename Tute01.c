@@ -5,6 +5,22 @@
 #include <stdio.h>
 
 int main() {
+
+  int m1 , m2 ; 
+  float avg = 0 , total = 0;
+
+  prinf ("Enter the Number 1-:");
+  scanf ("%d" , &m1);
+
+  printf ("Enter the Number 2-:");
+  scanf ("%d" , &m2);
+
+  total = m1 + m2 ;
+
+  avg = total / 2 ;
+
+  printf ("\nAverage : %.2f" , avg);
+
   
   return 0;
 }
