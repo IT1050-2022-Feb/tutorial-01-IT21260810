@@ -1,19 +1,34 @@
-/*Exercise 3 - Repetition
+#include<stdio.h>
+float area(float length, float width);
+float Harea(float Hlength, float Hwidth);
+int main()
+{
+	float width,length,Hwidth,Hlength,House=0,Yard=0,Lawn=0;
+	
+	printf("\nEnter the length of the yard : ");
+	scanf("%f",&length);
+	
+	printf("\nEnter the width of the yard : ");
+	scanf("%f",&width);
+	
+		
+	printf("\nEnter the width of the house : ");
+	scanf("%f",&Hwidth);
+	
+		
+	printf("\nEnter the length of the house : ");
+	scanf("%f",&Hlength);
 
-Write a C program to calculate the sum of the numbers from 1 to n.
-Where n is a keyboard input.
-
-e.g.
-
-n -> 100
-sum = 1+2+3+....+ 99+100 = 5050
-
-n -> 1-
-sum = 1+2+3+...+10 = 55 */
-
-#include <stdio.h>
-int main() {
-  
-  return 0;
+	
+	
+	printf("\nArea of the Yard : %.2f",area(length,width)); 
+	printf("\nArea of the House : %.2f",area(Hlength,Hwidth)); 
+	printf("\nArea of the Lawn : %.2f",area(length,width)-area(Hlength,Hwidth)); 
 }
 
+float area(float length, float width)
+{
+	float area;
+	area = length*width;
+	return area;
+}
