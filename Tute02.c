@@ -1,24 +1,30 @@
-/*Exercise 2 - Selection
+#include<stdio.h>
+int Square(int x);
+int Cube(int x);
+int main ()
+{
+  int num;
 
-Write a program to calculate the amount to be paid for a rented vehicle.
+  printf("\nInput the number : ");
+  scanf("%d",&num);
 
-•	Input the distance the van has travelled
-•	The first 30 km is at a rate of 50/= per km.
-•	The remaining distance is calculated at the rate of 40/= per km.
-
-
-e.g.
-
-Distance -> 20
-Amount = 20 x 50 = 1000
+  printf("\n%d",Square(num));
+  printf("\n%d",Cube(num));
 
 
-Distance -> 50
-Amount = 30 x 50 + (50-30) x 40 = 2300*/
-
-#include <stdio.h>
-
-int main() {
-  
   return 0;
+}
+
+int Square(int x)
+{
+  int num;
+  num=x*x;
+  return num;
+}
+
+int Cube(int x)
+{
+  int num2;
+  num2=x*x*x;
+  return num2;
 }
