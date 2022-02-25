@@ -1,30 +1,24 @@
-#include<stdio.h>
-int Square(int x);
-int Cube(int x);
-int main ()
-{
-  int num;
+#include <stdio.h>
 
-  printf("\nInput the number : ");
-  scanf("%d",&num);
+int main() {
 
-  printf("\n%d",Square(num));
-  printf("\n%d",Cube(num));
+  int dis=0 ;
+  float rate=0 ;
 
+  printf("Enter the distance the van travelled : ");
+  scanf("%d" , &dis);
+
+  if(dis <= 30)
+  {
+    rate = dis * 50 ;
+  }
+
+  else
+  {
+    rate = 1500 + 40 * (dis - 30);
+  }
+
+  printf("Amount : %.2f" , rate);
 
   return 0;
-}
-
-int Square(int x)
-{
-  int num;
-  num=x*x;
-  return num;
-}
-
-int Cube(int x)
-{
-  int num2;
-  num2=x*x*x;
-  return num2;
 }
