@@ -4,22 +4,24 @@
 
 #include <stdio.h>
 
-int main(void) 
-{
-  float mrk1,mrk2,mrk3,avg=0,tot=0; //variable decleration
+int main() {
+
+  int m1 , m2 ;
+  float avg=0 , tot=0 ;
+
+  printf("Enter the Mark 1 : ");
+  scanf("%d" , &m1);
+
+  printf("Enter the Mark 2 : ");
+  scanf("%d" , &m2);
+
+  tot = m1 + m2 ;
+  avg = tot / 2.0 ;
+
+  printf("\nAverage : %.2f" , avg);
   
-  printf("\nInput marks of the first module : ");
-  scanf("%f",&mrk1);
-
-  printf("\nInput marks of the second module : ");
-  scanf("%f",&mrk2);
-
-
-tot=mrk1+mrk2; // to calculate total
-avg=tot/2.0;  // to calculate average
-
-printf("\nAverage : %.2f",avg);
-
+  return 0;
+}
 
 
 
